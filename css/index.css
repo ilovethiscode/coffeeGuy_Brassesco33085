@@ -336,6 +336,11 @@ body{
     background-color: #285A84;
 }
 
+.top__socialMedia__anime:hover{
+    animation: agitar 1s;
+    animation-iteration-count: initial;
+}
+
 .mid{    
     background-color: #06172B;
     position: relative;
@@ -555,6 +560,42 @@ body{
     font-family: 'Barlow', sans-serif;
     font-size: 39px;
     color: #F7FFF7;
+}
+
+@keyframes agitar {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    90% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
 }
 
 /* FIN ESTILOS DEL FOOTER */
@@ -848,6 +889,8 @@ body{
     height: 100%;
 }
 
+
+
 .widget2{
     color: #F7FFF7;
     grid-area: widget2;
@@ -861,6 +904,7 @@ body{
     height: 100%;
     
 }
+
 
 @media screen and (max-width: 768px) {
 
