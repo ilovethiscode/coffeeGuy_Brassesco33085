@@ -29,3 +29,7 @@ Se agregó una sección de novedades que no estaba en la entrega inicial, para l
 
 Se agrega animaciones a iconos de la sección de redes sociales del footer de todas las vistas. Estas animaciones se activan al momento de posicionarse con el mouse arriba de los iconos y tienen una duración limitada.
 
+--------------------------------------------------------------------------------------------------------------
+
+Se corrije error que tenia con gitbash y se realiza el ultimo commit correspondiente a la segunda preentrega. Se aclara que ya estaba realizado el trabajo pero por un bug del programa al que no le encontraba solución no podía subirlo. Para esta oportunidad se agrega flex y grid a la sección de contacto, y se utiliza Bootstrap 5 para mejorar el formulario de contacto. Asimismo, la sección de contacto es totalmente responsiva como la de novedades.
+

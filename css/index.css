@@ -111,12 +111,6 @@ header{
 /* FIN ESTILOS DEL HEADER */
 
 
-
-.banner a img{
-    position: relative;
-    left: 330px;
-}
-
 .banner h1{
     position: absolute;
     left: 714px;
@@ -271,7 +265,12 @@ footer {
 
 #allFooter {
     width: 100vw;
-
+    display: grid;
+    grid-template-areas: "top"
+    "mid"
+    "bottom";
+    grid-template-rows: auto auto auto;
+    
 }
 
 .top{
@@ -335,17 +334,20 @@ footer {
     background-color: #285A84;
     width: auto;
     height: auto;
-    display: grid;
-    align-items: flex-start;
+    display: flex;  
+    flex-direction: row; 
+    justify-content: center;    
 }
 
 .top__socialMedia__container{
-    width: 300px;    
-    justify-self: center;
+    width: 300px;  
+    display: flex;  
+    flex-direction: row; 
+    justify-content: space-between;
 }
 
 .top__socialMedia a img{
-    margin-right: 29px;
+    
     background-color: #285A84;
     
 }
@@ -651,17 +653,33 @@ footer {
 
 /* ESTILOS SECCIÓN CONTACT*/
 
-.contact__banner{
-    position: relative;
-    left: 330px;
+#containerContact{
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-areas: ". bannerContact bannerContact bannerContact ."
+    ". contact__text contact__text contact__text ."
+    ". contact__form contact__form contact__form .";
+    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+}   
+
+.bannerContact{
+    grid-area: bannerContact;
+    max-height: 428px;
+    width: auto;
+}
+
+.bannerContact img{
+    width: 100%;
+    height: 100%;
 }
 
 .contact__text{
-    width: 824px;
-    height: 160px;
-    text-align: left;
-    position: relative;
-    left: 390px;
+    grid-area: contact__text;
+    width: auto;
+    height: auto;    
 }
 
 .contact__text h1{
@@ -669,6 +687,7 @@ footer {
     font-size: 64px;
     color: #982649;
     font-weight: bold;
+    
 }
 
 .contact__text p{
@@ -678,17 +697,12 @@ footer {
     font-weight: 600;
 }
 
-.contact__form{
-    position: relative;
-    left: 390px;
-    margin-top: 112px;
+.contact__form {
+    grid-area: contact__form;
 
 }
 
-.contact__form__elements{
-    width: 1000px;
-    height: 586px;
-}
+
 
 .contact__form span{
     font-family: 'Barlow', sans-serif;
@@ -697,31 +711,17 @@ footer {
     font-weight: 500;
 }
 
-.contact__form__elements{
-    display: block;
-    position: relative;
-    margin: 50px;
-}
-
 .contact__form__elements label{
-    display: inline-block;
+    
     font-family: 'Barlow', sans-serif;
     font-size: 30px;
     color: #0F0D0C;
     font-weight: 500;
 }
 
-.contact__form__elements input{
-    display: block;
-}
 
-.contact__form__elements select{
-    display:block;
-}
 
-.contact__form__elements textarea{
-    display: block;
-}
+
 
 /* FIN ESTILOS SECCIÓN CONTACT*/
 
@@ -784,19 +784,18 @@ footer {
     height: auto;
     width: 100vw;
     display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, auto);
     grid-template-areas: ". banner banner banner ."
     ". contenidoPrincipal contenidoPrincipal advertisingBanner ."
     ". widget1 widget2 advertisingBanner .";
-}
+    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, auto);
+}    
 
 .banner{
-    max-height: 428px;
     grid-area: banner;
+    max-height: 428px;
     width: auto;
-    
 }
 
 .banner img{
@@ -807,10 +806,11 @@ footer {
 .contenidoPrincipal{
     grid-area: contenidoPrincipal;
     height: auto;
-    width: auto;
+    width: auto;   
+    
 }
 
-.contenidoPrincipal h1{
+.contenidoPrincipal__titulo{
     font-family: 'Barlow', sans-serif;
     font-size: 50px;
     color: #982649;
@@ -818,9 +818,10 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
-.contenidoPrincipal p{
+.contenidoPrincipal__text{
     font-family: 'Barlow', sans-serif;
     font-size: 35px;
     color: #0F0D0C;
@@ -828,7 +829,7 @@ footer {
     height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: center;    
+    justify-content: center;  
 }
 
 .advertisingBanner{
@@ -942,6 +943,7 @@ footer {
     .banner {
         height: auto;
         width: auto;
+        
     }
 
     .banner img {
@@ -955,21 +957,21 @@ footer {
         justify-content: start;
     }
 
-    .contenidoPrincipal h1 {
+    .contenidoPrincipal__titulo {
         font-family: 'Barlow', sans-serif;
         font-size: 40px;
         color: #982649;
         font-weight: bold;
-        height: 70px;
-
+        height: auto; 
+        
     }
 
-    .contenidoPrincipal p {
+    .contenidoPrincipal__text {
         font-family: 'Barlow', sans-serif;
         font-size: 17px;
         color: #0F0D0C;
         font-weight: lighter;
-        height: 300px;
+        height: auto;        
     }
 
     .advertisingBanner {
