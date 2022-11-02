@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeeGuy</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="shortcut icon" href="./sources/images/coffeeGuyLogoIco.svg" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CoffeeGuy</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Roboto+Slab&display=swap"
-        rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
-</head>
+
+
+
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="shortcut icon" href="../sources/images/Coffee Guy 2 2 logoVsCode.svg" type="image/x-icon">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Roboto+Slab&display=swap"
+            rel="stylesheet">
+    
+    
+    </head>
 
 <body>
 
@@ -87,109 +96,153 @@
 
     <main id="container">
 
-        <section id="carrousel">
-        
-            <div class="banner">
-        
-                <a href="">
-        
-                    <img src="./sources/images/mainImageWomanDrinking.jpg" alt="Woman drinking a cup of something">
-        
-                </a>
-        
-        
-                <h1>Vos elegí el momento, que nosotros lo volvemos único. Coffee Guy, un viaje de ida</h1>
-        
+        <section id="frontInf">
+
+            <div class="topMain">
+
+                <div class="carrousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./sources/images/mainImageWomanDrinking.jpg" class="d-block w-100" alt="...">
+                                <h1 class="carrousel__elements__title">Vos elegí el momento, que nosotros lo volvemos único. Coffee
+                                    Guy, un viaje de ida</h1>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./sources/images/mainImageWomanDrinking.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./sources/images/mainImageWomanDrinking.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         
-        </section>
-
-
-
-        <section id="newsBanner">
+            
+        
+        
+            <!--             <div >
+        
+                        <div class="carrousel__elements">
+        
+                            <a class="carrousel__elements__img" href="">
+                
+                                <img src="./sources/images/mainImageWomanDrinking.jpg" alt="Woman drinking a cup of something">
+                    
+                            </a>
+                    
+                    
+                            <h1 class="carrousel__elements__title">Vos elegí el momento, que nosotros lo volvemos único. Coffee Guy, un viaje de ida</h1>
+        
+                        </div>
+        
+                    </div> -->
+        
+        
+        
+        
+        
+        
         
             <div class="secondBanner">
         
-        
-        
-                <a href="">
-        
-                    <img src="./sources/images/coffeeBagsLiteBanner.jpg"
-                        alt="coffee packages with varieties of flavor from a wide range countrys">
-        
-                </a>
+                <div class="secondBanner__elements">
 
-                <div class="secondBanner__textContainer">
-                    <h2>Nuevos Blends exclusivos!
-                        Veni a una de nuestras sucursales y regalate los aromas más típicos del mundo a través de nuestra nueva
-                        linea de sabores premium.
-                    </h2>
+                    <div class="secondBanner__elements__img">
+                        <a href=""></a>
+                        <img src="./sources/images/coffeeBagsLiteBanner.jpg"
+                            alt="coffee packages with varieties of flavor from a wide range countrys">
+                    
+                    </div>
+        
+
+        
+                    <div class="secondBanner__elements__title">
+                        <h2>Nuevos Blends exclusivos!
+                            Veni a una de nuestras sucursales y regalate los aromas más típicos del mundo a través de nuestra
+                            nueva
+                            linea de sabores premium.
+                        </h2>
+                    </div>
+        
                 </div>
-        
-        
-        
-
         
             </div>
         
-        </section>
-
-
-
-
-
-        <section id="paymentButtons">
+        
+        
+        
         
             <div class="information">
-            
-            
+        
+        
                 <div class="information__card">
-            
-            
-            
+        
+        
+        
                     <a href="">
-            
+        
                         <img src="./sources/images/cardShipments.svg" alt="shipments card information">
-            
+        
                     </a>
-            
-            
-            
+        
+        
+        
                 </div>
-            
+        
                 <div class="information__card">
-            
-            
-            
+        
+        
+        
                     <a href="">
-            
+        
                         <img src="./sources/images/cardPayments.svg" alt="paymants card information">
-            
+        
                     </a>
-            
-            
-            
+        
+        
+        
                 </div>
-            
+        
                 <div class="information__card">
-            
-            
-            
+        
+        
+        
                     <a href="">
-            
+        
                         <img src="./sources/images/cardSupport.svg" alt="whatsapp contact card">
-            
+        
                     </a>
-            
-            
-            
+        
+        
+        
                 </div>
-            
-            
+        
+        
             </div>
         
-        
         </section>
+
+
 
 
 

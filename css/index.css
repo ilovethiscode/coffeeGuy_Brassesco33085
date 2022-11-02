@@ -110,11 +110,34 @@ header{
 
 /* FIN ESTILOS DEL HEADER */
 
+#frontInf{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". topMain topMain topMain ."
+    ". secondBanner secondBanner secondBanner ."
+    ". information information information .";
+    grid-template-rows: auto 300px auto;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
 
-.banner h1{
-    position: absolute;
-    left: 714px;
-    top: 608px;
+.topMain {
+    grid-area: topMain;
+    width: auto;
+    height: auto;
+}
+
+.carrousel-inner{
+
+}
+
+.carousel-item{
+    
+
+}
+
+.carousel-item h1{
     border: solid;
     border-color: #0F0D0C;
     font-family: 'Roboto Slab', serif;
@@ -122,60 +145,105 @@ header{
     
 }
 
-.secondBanner{
-    position: relative;
-    left: 330px;
+.carrousel__elements{
+    width: auto;
+    height: auto;
+    max-height: 530px;
 }
 
-.secondBanner__textContainer{
-    position: absolute;
-    width: 400px;
-    height: 215px;
-    left: 1263px;
-    top: 66px;
-    border: solid;
-    border-color: #0F0D0C;
+.carrousel__elements__img{
+    width: auto;
+    height: auto;
+    max-height: 530px;
+}
+
+
+.banner h1{
+
+
     
 }
 
-.secondBanner__textContainer h2{
+.secondBanner{
+    grid-area: secondBanner;
+    max-height: 300px;
+    width: auto;
+}
+
+.secondBanner__elements{
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.secondBanner__elements__img{
+    height: 100%;
+}
+
+.secondBanner__elements__img img{
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+    max-width: 1146px;
+}
+
+.secondBanner__elements__title{
+    border: solid;
+    border-color: #0F0D0C;
+    max-width: 400px;
+    max-height: 200px;
+    position: absolute;
+    top: 65%;
+    left: 85%;
+    transform: translate(-50%, -50%);    
+}
+
+.secondBanner__elements__title h2{
+    max-width: 400px;
+    max-height: 200px;
     font-family: 'Barlow', sans-serif;
-    font-size: 28px;
+    font-size: 17px;
+    font-weight: bold;
     text-align: center;
 }
 
 .information{
-    margin-top: 114px;
+    grid-area: information;
+    max-height: 114px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
 .information__card{
-    display: inline;
-    position: relative;
-    left: 502px;
-    margin-right: 168px;
+    height: 100%;
+    width: auto;
+    max-width: 380px;    
+}
+
+.information__card a img{
+    width: auto;
+    
 }
 
 #shopGallery{
-    margin-top: 48px;
+
 }
 
 .directShop{
-    display: inline;
-    position: relative;
-    
-    left: 330px;
-    margin-right: 24px;
+
 }
 
 .saleElements{
-    margin-bottom: 72px;
+
 }
 
 .saleElements__title{
-    position: relative;
-    left: 1016px;
-    margin-top: 96px;
-    margin-bottom: 106px;
+
 
 }
 
@@ -194,8 +262,8 @@ header{
 }
 
 .saleElements__card{
-    display: inline-block;
-    margin-right: 40px;
+
+
     
 }
 
@@ -217,9 +285,8 @@ header{
     width: 224px;
     height: 36px;
     background-color: #06172B;
-    position: relative;
-    left: 120px;
-    margin-top: 10px;
+
+
     border-radius: 1ch;
     border: solid;
     border-color: #06172B;
@@ -236,13 +303,11 @@ header{
     width: 344px;
     height: 56px;
     background-color: #CF0010;
-    position: relative;
-    left: 1080px;
+
     border-radius: 4ch;
     border: solid;
     border-color: #CF0010;
-    margin-top: 25px;
-    margin-bottom: 15px;
+
 
 }
 
@@ -252,8 +317,7 @@ header{
     font-weight: 500;
     color: #F7FFF7;
     background-color: #CF0010;
-    position: absolute;
-    left: 90px;
+
 }
 
 
@@ -575,39 +639,60 @@ footer {
 
 /*ESTILOS SECCIÓN ABOUT*/
 
-.containerAbout{
-    position: relative;
+#about{    
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". banner banner banner ."
+    ". principalAbout principalAbout principalAbout .";
+    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);    
+    margin-bottom: 15px;
 }
 
-.about__banner{
-    position: relative;
-    left: 330px;
+.banner{
+    grid-area: banner;
+    max-height: 428px;
+    width: auto;
 }
-.about__text{
-    width: 1828px;
-    height: 1156px;
-    margin-top: 48px;
-    position: relative;
-    left: 366px;
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.principalAbout{
+    grid-area: principalAbout;
+    height: auto;
+    width: auto;  
+}
+
+.principalAbout__titulo, .principalAbout__text{
+    height: auto;
+    width: auto;
     font-family: 'Barlow', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #0F0D0C;
     font-weight: 400;
+
 }
 
-.about__text__article h1{
+.principalAbout__titulo h1{
     font-family: 'Barlow', sans-serif;
     font-size: 40px;
-    color: #0F0D0C;
+    color: #982649;
     font-weight: bolder;
 }
 
-.about__text__articleScondary h2{
+.principalAbout__text h2{
     font-family: 'Barlow', sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #0F0D0C;
     font-weight: 500;
-    margin-top: 56px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 /*FIN ESTILOS SECCIÓN ABOUT*/
@@ -728,50 +813,82 @@ footer {
 
 /* ESTILOS SECCIÓN LOCALES*/
 
-.locales__banner{
-    position: relative;
-    left: 330px;
+#containerLocales{
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". banner banner banner ."
+    ". locales locales locales .";
+    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+}    
+
+.banner{
+    grid-area: banner;
+}
+
+.locales{
+    grid-area: locales;
+    display: grid;
 }
 
 .locales__text{
-    width: 824px;
-    height: 160px;
+    height: auto;
+    width: auto;
     text-align: left;
-    position: relative;
-    left: 390px;
 }
 
 .locales__text h1{
     font-family: 'Barlow', sans-serif;
-    font-size: 64px;
+    font-size: 40px;
     color: #982649;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .locales__text p{
     font-family: 'Barlow', sans-serif;
-    font-size: 39px;
+    font-size: 25px;
     color: #0F0D0C;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .locales__search{
-    position: relative;
-    left: 700px;
+    width: auto;
+    height: auto;
+    max-height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.locales__search select{
-    margin-right: 100px;
+.form-select{
+    height: 100%;
+    width: 100%;
+    max-height: 57px;
+    max-width: 160px;    
+    background-color: #F7FFF7;
+    color: #0F0D0C;
+    border-color: #0F0D0C;
 }
 
 .locales__map{
-    width: 607px;
-    position: relative;
-    left: 700px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border: solid;
-    box-sizing: border-box;
+    width: auto;
+    height: auto; 
+    min-width: 600px;
+    min-height: 450px; 
+    border: solid;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    justify-self: center;
+}
+
+.locales__map iframe{
+    width: 100%;
+    height: 100%; 
+    max-width: 600px;
+    min-height: 450px;  
     
 }
 
@@ -782,7 +899,7 @@ footer {
 
 #newsContainer{
     height: auto;
-    width: 100vw;
+    width: 100%;
     display: grid;
     grid-template-areas: ". banner banner banner ."
     ". contenidoPrincipal contenidoPrincipal advertisingBanner ."
