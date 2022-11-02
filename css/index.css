@@ -302,13 +302,11 @@ header{
 .saleElements__button{
     width: 344px;
     height: 56px;
+    
     background-color: #CF0010;
-
     border-radius: 4ch;
     border: solid;
-    border-color: #CF0010;
-
-
+    border-color: #CF0010;    
 }
 
 .saleElements__button p{
@@ -700,37 +698,99 @@ footer {
 
 /*ESTILOS SECCIÓN SHOP*/
 
+#conteinerShop {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-areas: ". bannerShop bannerShop bannerShop ."
+        "filtros cardsContainer cardsContainer cardsContainer ."
+        ". cardsContainer cardsContainer cardsContainer ."
+        ". cardsContainer cardsContainer cardsContainer ."
+        ". . saleElements__button . .";
+    gap: 15px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 282px 282px 282px auto;
+}
+
+.bannerShop{
+    grid-area: bannerShop;
+    max-height: 428px;
+    width: 100%;
+}
+
+.bannerShop img{
+    width: 100%;
+    height: auto;
+}
+
 .filtros{
-    display: inline-block;
-    position: relative;
-    bottom: 1000px;
-}
-
-.filtros ul{
-    display: inline-block;
-}
-
-.filtros span{
-    display: block;
+    grid-area: filtros;
+    background-color: #F7FFF7;
+    display: flex;
+    flex-direction: column;  
+    border: #0F0D0C solid 1px;
+    max-height: 285px;
 }
 
 .filtros__list{
     list-style: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-#containerShop{
-    position: relative;
-    bottom: 500px;
+.filtros__list li{
+    border: #0F0D0C solid 1px;
 }
 
-#cardsContainer{
-    display: inline-block;
-    width: 1893px;
-    height: 1248px;
-    position: relative;
-    left: 330px;
-    margin-top: 96px;
-    bottom: 50px;
+
+.cardsContainer{
+    grid-area: cardsContainer;
+    max-width: 1146px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.saleElements__card{
+    max-height: 550px;
+    width: 100%;
+    max-width: 370px;
+    display: grid;
+    margin-bottom: 4px;
+}
+
+.saleElements__card__img{
+    width: 100%;
+    max-width: 280px;
+    justify-self: center;
+}
+
+.saleElements__card__img img{
+    width: auto;
+    max-width: 280px;
+    border: 1px solid #0F0D0C;
+}
+
+.saleElements__card__button{
+    max-width: 225px;
+    justify-self: center;
+}
+
+.saleElements__button{
+    grid-area: saleElements__button;
+    display: grid;
+    justify-content: center; 
+    margin-top: 5px;
+    margin-bottom: 15px;
+
+}
+
+.saleElements__button--fitting{
+    max-height: 24px;
+    border: none;
+    align-self: center;
 }
 
 /* FIN ESTILOS SECCIÓN SHOP*/
@@ -786,6 +846,8 @@ footer {
     grid-area: contact__form;
 
 }
+
+
 
 
 
