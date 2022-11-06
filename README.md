@@ -39,5 +39,5 @@ Se corrije error que tenia con gitbash y se realiza el ultimo commit correspondi
 
 2/11/2022
 
-Se corrigió  y actualizó el sistema responsive para las secciones de about y locales, en esta ultima también se cambiaron los botones de búsqueda. Se avanzó en parte de optimización de la misma para la sección de index a la cual también se le agrego un carrousel.
+Se corrigió  y actualizó el sistema responsive para las secciones de about y locales, en esta ultima también se cambiaron los botones de búsqueda. Se avanzó en parte de optimización de la misma para la sección de index a la cual también se le agrego un carrousel. Se agrega en el mismo día la versión responsive para la view del shop
 
