@@ -41,3 +41,7 @@ Se corrije error que tenia con gitbash y se realiza el ultimo commit correspondi
 
 Se corrigió  y actualizó el sistema responsive para las secciones de about y locales, en esta ultima también se cambiaron los botones de búsqueda. Se avanzó en parte de optimización de la misma para la sección de index a la cual también se le agrego un carrousel. Se agrega en el mismo día la versión responsive para la view del shop
 
+--------------------------------------------------------------------------------------------------------------------
+
+Se continúa subiendo el estilo en versión sass que no habia sido culminado por los inconvenientes de instalación. En este caso, se deja el index y su versión mobile totalmente en versión sass.
+
