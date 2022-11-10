@@ -1,28 +1,29 @@
 /*ESTILOS HEADER*/
 
-header {
-    height: 150px;
-    width: 100vw;
-    display: grid;
-    grid-template-areas: "flagColor1 flagColor1 flagColor1" "flagColor2 flagColor2 flagColor2" "logoContainer navContainer .";
-    grid-template-rows: 22.2px 18.2px auto;
-    grid-template-columns: repeat(3, 1fr);
-  }
+header{
+  height: 150px;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: "flagColor1 flagColor1 flagColor1"
+  "flagColor2 flagColor2 flagColor2"
+  "logoContainer navContainer .";
+  grid-template-rows: 22.2px 18.2px auto;
+  grid-template-columns: repeat(3, 1fr);
   
-  .flagColor1 {
+  .flagColor1{
     grid-area: flagColor1;
     height: 22.2px;
     background-color: #06172B;
     width: 100%;
   }
-  
-  .flagColor2 {
+
+  .flagColor2{
     grid-area: flagColor2;
     height: 18.2px;
     background-color: #982649;
     width: 100%;
   }
-  
+
   .logoContainer {
     grid-area: logoContainer;
     display: grid;
@@ -30,56 +31,86 @@ header {
     align-items: center;
     width: 100%;
   }
-  
+
   .navContainer {
     grid-area: navContainer;
     height: 110px;
     width: 100%;
-  }
-  
-  .navContainer__menu {
-    height: 110px;
-    width: 100%;
-    display: grid;
-    align-items: center;
-  
-    ul {
-      list-style: none;
-      height: 29px;
+    
+    .navContainer__menu{
+      height: 110px;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-  
-      li {
+      display: grid;
+      align-items: center;
+
+      ul {
+        list-style: none;
         height: 29px;
-        width: 93px;
-        display: grid;
-        align-items: center;
-  
-        a {
-          text-decoration-line: none;
-  
-          &:visited {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+          height: 29px;
+          width: 93px;
+          display: grid;
+          align-items: center;
+          
+          a {
             text-decoration-line: none;
-          }
-  
-          span {
-            color: #0F0D0C;
-            font-family: 'Roboto Slab', serif;
-            font-size: 22px;
-  
-            &:visited {
-              color: #0F0D0C;
+
+            &:visited{
+              text-decoration-line: none;
             }
-  
-            &:hover {
-              border: solid;
+
+            span {
               color: #0F0D0C;
+              font-family: 'Roboto Slab', serif;
+              font-size: 22px;
+              
+              &:visited{
+                color: #0F0D0C;
+              }
+
+              &:hover{
+                border: solid;
+                color: #0F0D0C;
+              }
             }
           }
         }
       }
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
