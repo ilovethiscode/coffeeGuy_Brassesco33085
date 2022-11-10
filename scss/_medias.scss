@@ -64,6 +64,7 @@
   footer {
     #allFooter {
       width: auto;
+      height: auto;
 
       .top {
         display: none;
@@ -72,41 +73,45 @@
       .mid {
         background-color: #06172B;
         position: relative;
-        width: 360px;
-        height: 490px;
+        height: 100%;
         width: 100%;
 
         .mid__blocks {
-          width: auto;
-          height: 490px;
+          height: 100%;
+          width: 100%;
           left: 0px;
           display: grid;
           grid-template-areas: "mid__blocks__institucional mid__blocks__legal" "mid__blocks__cliente mid__blocks__servicios";
-          grid-template-rows: 242px 242px;
+          grid-template-rows: auto auto;
           grid-template-columns: repeat(2, 1fr);
-          gap: 20px;
+          gap: 10px;
 
           .mid__blocks__institucional {
             width: 170px;
-            height: 243px;
+            height: 200px;
             margin-right: 0px;
             grid-area: mid__blocks__institucional;
             display: grid;
             justify-items: center;
             width: 100%;
 
-            .mid__blocks__institucional__title span {
-              font-family: 'Barlow', sans-serif;
-              font-size: 16px;
-              font-weight: bold;
-              color: #285A84;
-            }
+            .mid__blocks__institucional__title{
+              height: 30px;
+
+              span {
+                font-family: 'Barlow', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #285A84;
+              }
+            }            
 
             .mid__blocks__institucional__blockUnit {
-              height: 204px;
+              height: 150px;
 
               .mid__blocks__institucional__blockUnit__nav__ul {
                 list-style: none;
+                margin: 0;
 
                 .mid__blocks__institucional__blockUnit__nav__ul__element a {
                   text-decoration: none;
@@ -129,7 +134,7 @@
 
           .mid__blocks__legal {
             width: 131px;
-            height: 243px;
+            height: 200px;
             margin-right: 0px;
             bottom: 0px;
             grid-area: mid__blocks__legal;
@@ -137,15 +142,20 @@
             justify-items: center;
             width: 100%;
 
-            .mid__blocks__legal__title span {
-              font-family: 'Barlow', sans-serif;
-              font-size: 16px;
-              font-weight: bold;
-              color: #285A84;
+            .mid__blocks__legal__title{
+              height: 30px;
+
+              span {
+                font-family: 'Barlow', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #285A84;
+              }
             }
+            
 
             .mid__blocks__legal__blockUnit {
-              height: 204px;
+              height: 150px;
 
               .mid__blocks__legal__blockUnit__nav__ul {
                 list-style: none;
@@ -171,22 +181,26 @@
 
           .mid__blocks__cliente {
             width: 170px;
-            height: 243px;
+            height: 230px;
             margin-right: 0px;
             grid-area: mid__blocks__cliente;
             display: grid;
             justify-items: center;
             width: 100%;
 
-            .mid__blocks__cliente__title span {
-              font-family: 'Barlow', sans-serif;
-              font-size: 16px;
-              font-weight: bold;
-              color: #285A84;
-            }
+            .mid__blocks__cliente__title{
+              height: 30px;
+              
+              span {
+                font-family: 'Barlow', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #285A84;
+              }
+            }            
 
             .mid__blocks__cliente__blockUnit {
-              height: 204px;
+              height: 150px;
 
               .mid__blocks__cliente__blockUnit__nav__ul {
                 list-style: none;
@@ -212,7 +226,7 @@
 
           .mid__blocks__servicios {
             width: 131px;
-            height: 243px;
+            height: 230px;
             margin-right: 0px;
             bottom: 0px;
             grid-area: mid__blocks__servicios;
@@ -220,15 +234,20 @@
             justify-items: center;
             width: 100%;
 
-            .mid__blocks__servicios__title span {
-              font-family: 'Barlow', sans-serif;
-              font-size: 16px;
-              font-weight: bold;
-              color: #285A84;
+            .mid__blocks__servicios__title{
+              height: 30px;
+
+              span {
+                font-family: 'Barlow', sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+                color: #285A84;
+              }
             }
+            
 
             .mid__blocks__servicios__blockUnit {
-              height: 204px;
+              height: 150px;
 
               .mid__blocks__servicios__blockUnit__nav__ul {
                 list-style: none;

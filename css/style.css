@@ -667,12 +667,12 @@ footer #allFooter .top .top__socialMedia .top__socialMedia__container a img:hove
 }
 footer #allFooter .mid {
   background-color: #06172B;
-  width: 100vw;
-  height: 483px;
+  width: auto;
+  height: auto;
 }
 footer #allFooter .mid .mid__blocks {
   width: 100%;
-  height: 490px;
+  height: auto;
   left: 0px;
   display: grid;
   grid-template-areas: "mid__blocks__institucional mid__blocks__legal mid__blocks__cliente mid__blocks__servicios";
@@ -895,6 +895,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
 @media (max-width: 768px) and (min-width: 400px) {
   footer #allFooter {
     width: auto;
+    height: auto;
   }
   footer #allFooter .top {
     display: none;
@@ -902,28 +903,30 @@ footer #allFooter .bottom .bottom__copyright__text p {
   footer #allFooter .mid {
     background-color: #06172B;
     position: relative;
-    width: 360px;
-    height: 490px;
+    height: 100%;
     width: 100%;
   }
   footer #allFooter .mid .mid__blocks {
-    width: auto;
-    height: 490px;
+    height: 100%;
+    width: 100%;
     left: 0px;
     display: grid;
     grid-template-areas: "mid__blocks__institucional mid__blocks__legal" "mid__blocks__cliente mid__blocks__servicios";
-    grid-template-rows: 242px 242px;
+    grid-template-rows: auto auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 10px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__institucional {
     width: 170px;
-    height: 243px;
+    height: 200px;
     margin-right: 0px;
     grid-area: mid__blocks__institucional;
     display: grid;
     justify-items: center;
     width: 100%;
+  }
+  footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__institucional__title {
+    height: 30px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__institucional__title span {
     font-family: "Barlow", sans-serif;
@@ -932,10 +935,11 @@ footer #allFooter .bottom .bottom__copyright__text p {
     color: #285A84;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__institucional__blockUnit {
-    height: 204px;
+    height: 150px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__institucional__blockUnit .mid__blocks__institucional__blockUnit__nav__ul {
     list-style: none;
+    margin: 0;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__institucional__blockUnit .mid__blocks__institucional__blockUnit__nav__ul .mid__blocks__institucional__blockUnit__nav__ul__element a {
     text-decoration: none;
@@ -952,13 +956,16 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__legal {
     width: 131px;
-    height: 243px;
+    height: 200px;
     margin-right: 0px;
     bottom: 0px;
     grid-area: mid__blocks__legal;
     display: grid;
     justify-items: center;
     width: 100%;
+  }
+  footer #allFooter .mid .mid__blocks .mid__blocks__legal .mid__blocks__legal__title {
+    height: 30px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__legal .mid__blocks__legal__title span {
     font-family: "Barlow", sans-serif;
@@ -967,7 +974,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
     color: #285A84;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__legal .mid__blocks__legal__blockUnit {
-    height: 204px;
+    height: 150px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__legal .mid__blocks__legal__blockUnit .mid__blocks__legal__blockUnit__nav__ul {
     list-style: none;
@@ -987,12 +994,15 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__cliente {
     width: 170px;
-    height: 243px;
+    height: 230px;
     margin-right: 0px;
     grid-area: mid__blocks__cliente;
     display: grid;
     justify-items: center;
     width: 100%;
+  }
+  footer #allFooter .mid .mid__blocks .mid__blocks__cliente .mid__blocks__cliente__title {
+    height: 30px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__cliente .mid__blocks__cliente__title span {
     font-family: "Barlow", sans-serif;
@@ -1001,7 +1011,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
     color: #285A84;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__cliente .mid__blocks__cliente__blockUnit {
-    height: 204px;
+    height: 150px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__cliente .mid__blocks__cliente__blockUnit .mid__blocks__cliente__blockUnit__nav__ul {
     list-style: none;
@@ -1021,13 +1031,16 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__servicios {
     width: 131px;
-    height: 243px;
+    height: 230px;
     margin-right: 0px;
     bottom: 0px;
     grid-area: mid__blocks__servicios;
     display: grid;
     justify-items: center;
     width: 100%;
+  }
+  footer #allFooter .mid .mid__blocks .mid__blocks__servicios .mid__blocks__servicios__title {
+    height: 30px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__servicios .mid__blocks__servicios__title span {
     font-family: "Barlow", sans-serif;
@@ -1036,7 +1049,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
     color: #285A84;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__servicios .mid__blocks__servicios__blockUnit {
-    height: 204px;
+    height: 150px;
   }
   footer #allFooter .mid .mid__blocks .mid__blocks__servicios .mid__blocks__servicios__blockUnit .mid__blocks__servicios__blockUnit__nav__ul {
     list-style: none;

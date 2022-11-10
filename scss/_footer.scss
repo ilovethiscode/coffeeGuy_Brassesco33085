@@ -90,12 +90,12 @@ footer {
 
     .mid{    
       background-color: #06172B;
-      width: 100vw;
-      height: 483px;
+      width: auto;
+      height: auto;
 
       .mid__blocks {
         width: 100%;
-        height: 490px;
+        height: auto;
         left: 0px;
         display: grid;
         grid-template-areas: "mid__blocks__institucional mid__blocks__legal mid__blocks__cliente mid__blocks__servicios";
