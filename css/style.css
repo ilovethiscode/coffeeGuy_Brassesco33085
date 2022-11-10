@@ -1162,23 +1162,26 @@ footer #allFooter .bottom .bottom__copyright__text p {
     grid-template-columns: auto auto;
     gap: 5px;
   }
-  .banner {
+  #about .banner {
     grid-area: banner;
     border: solid 1px #06172B;
   }
-  .principalAbout {
+  #about .principalAbout {
     grid-area: principalAbout;
     margin-top: 5px;
   }
-  .principalAbout__titulo, .principalAbout__text {
+  #about .principalAbout .principalAbout__titulo {
     font-size: 15px;
   }
-  .principalAbout__titulo h1 {
+  #about .principalAbout .principalAbout__titulo h1 {
     font-size: 20px;
     color: #982649;
     font-weight: bolder;
   }
-  .principalAbout__text h2 {
+  #about .principalAbout .principalAbout__text {
+    font-size: 15px;
+  }
+  #about .principalAbout .principalAbout__text h2 {
     font-size: 17px;
     font-weight: 500;
     margin-top: 20px;

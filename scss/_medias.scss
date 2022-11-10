@@ -400,32 +400,36 @@
     grid-template-rows: repeat(2, auto);
     grid-template-columns: auto auto;
     gap: 5px;
-  }
 
-  .banner {
-    grid-area: banner;
-    border: solid 1px #06172B;
-  }
+    .banner {
+      grid-area: banner;
+      border: solid 1px #06172B;
+    }
 
-  .principalAbout {
-    grid-area: principalAbout;
-    margin-top: 5px;
-  }
+    .principalAbout {
+      grid-area: principalAbout;
+      margin-top: 5px;
 
-  .principalAbout__titulo, .principalAbout__text{
-    font-size: 15px;
-  }
-  
-  .principalAbout__titulo h1{
-    font-size: 20px;
-    color: #982649;
-    font-weight: bolder;
-  }
-  
-  .principalAbout__text h2{
-    font-size: 17px;
-    font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
+      .principalAbout__titulo {
+        font-size: 15px;
+
+        h1{
+          font-size: 20px;
+          color: #982649;
+          font-weight: bolder;
+        }
+      }
+
+      .principalAbout__text{
+        font-size: 15px;
+
+        h2{
+          font-size: 17px;
+          font-weight: 500;
+          margin-top: 20px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }  
 }
