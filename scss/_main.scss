@@ -508,71 +508,465 @@
   gap: 15px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto);
+
+  .banner {
+    grid-area: banner;
+    max-height: 428px;
+    width: auto;
+    min-height: 261.65px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .locales {
+    grid-area: locales;
+    display: grid;
+  
+    .locales__text {
+      height: auto;
+      width: auto;
+      text-align: left;
+    
+      h1 {
+        font-family: 'Barlow', sans-serif;
+        font-size: 40px;
+        color: #982649;
+        font-weight: bolder;
+      }
+    
+      p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 25px;
+        color: #0F0D0C;
+        font-weight: 400;
+      }
+    }
+  
+    .locales__search {
+      width: 100%;
+      height: 100%;
+      max-height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    
+      .locales__search__formButton {
+        height: 100%;
+        width: 100%;
+        max-height: 57px;
+        max-width: 170px;
+        background-color: #F7FFF7;
+        color: #0F0D0C;
+        border-color: #982649;
+        font-weight: bold;      
+      }
+    }
+  
+    .locales__map {
+      width: auto;
+      height: auto;
+      min-width: 600px;
+      min-height: 450px;
+      border: solid 1px #06172B;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      justify-self: center;
+    
+      iframe {
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        min-height: 450px;
+      }
+    }
+    
+  }
 }
 
-.banner {
-  grid-area: banner;
-}
 
-.locales {
-  grid-area: locales;
+/*MAIN DE LA SECCIÓN DEL SHOP*/
+
+#conteinerShop {
+  height: 100%;
+  width: 100%;
   display: grid;
-}
+  grid-template-areas: ". bannerShop bannerShop bannerShop ." ". tituloShop tituloShop tituloShop ." "filtrosContainer cardsContainer cardsContainer cardsContainer ." ". cardsContainer cardsContainer cardsContainer ." ". cardsContainer cardsContainer cardsContainer ." ". . saleElements__button . .";
+  gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto auto auto auto;
 
-.locales__text {
-  height: auto;
-  width: auto;
-  text-align: left;
-
-  h1 {
-    font-family: 'Barlow', sans-serif;
-    font-size: 40px;
-    color: #982649;
-    font-weight: bolder;
+  .bannerShop{
+    grid-area: bannerShop;
+    max-height: 428px;
+    width: 100%;
+  
+    img{
+      width: 100%;
+      height: auto;
+    }
   }
 
-  p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 25px;
-    color: #0F0D0C;
-    font-weight: 400;
+  .tituloShop{
+    grid-area: tituloShop;
+    
+    h1{
+      font: $titulo-principal;
+      color: #982649;
+      text-align: center;
+    }
+  }
+
+  .filtrosContainer{
+    grid-area: filtrosContainer;
+    background-color: #F7FFF7;
+    display: flex;
+    flex-direction: column;  
+    border: #0F0D0C solid 1px;
+    max-height: 285px;
+  
+    .filtros__list{
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+    
+      li{
+        border: #0F0D0C solid 1px;
+      }
+    }
+  }
+
+  .cardsContainer{
+    grid-area: cardsContainer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 1100px;
+  
+    .saleElements__card{
+      max-height: 550px;
+      width: 100%;
+      max-width: 370px;
+      display: grid;
+      margin-bottom: 6px;
+    
+      .saleElements__card__img{
+        width: 100%;
+        max-width: 280px;
+        justify-self: center;
+      
+        img{
+          width: auto;
+          max-width: 280px;
+          border: 1px solid #0F0D0C;
+        }
+      }
+    
+      .saleElements__card__text{
+    
+        margin-top: 10px;
+      
+        h6{
+          text-align: center;
+          font-family: 'Barlow', sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+        }
+      
+        p{
+          text-align: center;
+          font-family: 'Barlow', sans-serif;
+          font-size: 20px;
+          font-weight: 400;
+        }
+      }
+    
+      .saleElements__card__button{
+        max-width: 225px;
+        justify-self: center;
+      
+        button{
+          width: 224px;
+          height: 36px;
+          background-color: #06172B;
+          border-radius: 1ch;
+          border: solid;
+          border-color: #06172B;
+          justify-self: center;
+          
+          p{
+            font-family: 'Barlow', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            color: #F7FFF7;
+          }
+        }
+      }  
+    }
+  }
+
+  .saleElements__button {
+    grid-area: saleElements__button;
+    width: 344px;
+    height: 56px;
+    background-color: #CF0010;
+    border-radius: 4ch;
+    border: solid;
+    border-color: #CF0010;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  
+    button {
+      height: 100%;
+      width: 100%;
+      border: none;
+      background-color: #CF0010;
+      border-radius: 4ch;
+      display: grid;
+      
+  
+      p {
+        font-family: 'Barlow', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #F7FFF7;
+        background-color: #CF0010;
+        border-radius: 4ch;
+        margin-bottom: 0;
+        align-self: center;
+      }
+    }
   }
 }
 
-.locales__search {
-  width: 100%;
-  height: 100%;
-  max-height: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+/*MAIN DE LA SECCIÓN NOVEDADES*/
 
-.form-select {
+#newsContainer{
   height: 100%;
   width: 100%;
-  max-height: 57px;
-  max-width: 160px;
-  background-color: #F7FFF7;
-  color: #0F0D0C;
-  border-color: #0F0D0C;
-}
+  display: grid;
+  grid-template-areas: ". banner banner banner ."
+  ". contenidoPrincipal contenidoPrincipal advertisingBanner ."
+  ". widget1 widget2 advertisingBanner .";
+  gap: 15px;
+  grid-template-columns: auto 382px 382px 382px auto;
+  grid-template-rows: repeat(3, auto);
 
-.locales__map {
-  width: auto;
-  height: auto;
-  min-width: 600px;
-  min-height: 450px;
-  border: solid 1px #06172B;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  justify-self: center;
+  .banner{
+    grid-area: banner;
+    width: 100%;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-  iframe {
+  .contenidoPrincipal{
+    grid-area: contenidoPrincipal;
+    height: 100%;
+    width: 100%;
+    
+    .contenidoPrincipal__titulo{
+      font: $titulo-principal;
+      color: #982649;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+  
+    .contenidoPrincipal__text{
+      max-height: 80%;
+      font-family: 'Barlow', sans-serif;
+      font-size: 180%;
+      color: #0F0D0C;
+      font-weight: normal;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;  
+    }
+  }
+
+  .advertisingBanner{
+    grid-area: advertisingBanner;
     width: 100%;
     height: 100%;
-    max-width: 600px;
-    min-height: 450px;
+    
+    img {
+      height: 100%;
+      width: 100%;    
+    }  
   }
-}
+
+  .widget1{
+    color: #F7FFF7;
+    grid-area: widget1;
+    height: 100%;
+    width: 100%;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .widget2{
+    color: #F7FFF7;
+    grid-area: widget2;
+    height: auto;
+    width: auto;
+  
+    img{
+      width: 100%;
+      height: 100%;  
+    }
+  }
+}    
+
+
+/*MAIN DE LA SECCIÓN CONTACT*/
+
+#containerContact{
+  height: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-areas: ". bannerContact bannerContact bannerContact ."
+  ". contact__text contact__text contact__text ."
+  ". contact__form contact__form contact__form .";
+  gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, auto);
+
+  .bannerContact{
+    grid-area: bannerContact;
+    max-height: 261.65px;
+    width: auto;
+  
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .contact__text{
+    grid-area: contact__text;
+    width: auto;
+    height: auto;
+  
+    h1{
+      font: $titulo-principal;
+      color: #982649;      
+    }
+  
+    p{
+      font-family: 'Barlow', sans-serif;
+      font-size: 39px;
+      color: #0F0D0C;
+      font-weight: 600;
+    }
+  }
+
+  .contact__form {
+    grid-area: contact__form;
+  
+    span{
+      font-family: 'Barlow', sans-serif;
+      font-size: 36px;
+      color: #0F0D0C;
+      font-weight: 500;
+    }
+
+    form{
+      display: grid;
+    }
+  
+    .labels{    
+      font-family: 'Barlow', sans-serif;
+      font-size: 30px;
+      color: #0F0D0C;
+      font-weight: 500;
+    }
+    
+    .inputContainer{
+      display: grid;
+      align-content: center;
+    }
+
+    .buttonContact{
+      max-width: 80px;
+      justify-self: center;
+    }
+  }
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
