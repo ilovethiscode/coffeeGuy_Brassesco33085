@@ -1108,7 +1108,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
 }
 
 /*MEDIA PARA EL HEADER VERSIÓN MOBILE*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   header {
     height: 150px;
     width: auto;
@@ -1158,7 +1158,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
 }
 /*MEDIA PARA EL HEADER VERSIÓN MOBILE*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   footer #allFooter {
     width: auto;
     height: auto;
@@ -1351,7 +1351,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
 }
 /*MEDIA PARA EL INDEX VERSIÓN MOBILE*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1802px) and (min-width: 300px) {
   #frontInf {
     height: auto;
     width: auto;
@@ -1366,7 +1366,6 @@ footer #allFooter .bottom .bottom__copyright__text p {
     grid-area: topMain;
     width: 100%;
     height: 100%;
-    max-height: 106px;
   }
   #frontInf .topMain .carrouselContainer .carrouselContainer__elements__slides {
     width: 100%;
@@ -1384,7 +1383,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
   #frontInf .topMain .carrouselContainer .carrouselContainer__elements__slides .carrouselContainer__elements__slides--img h1 {
     max-height: 25%;
-    font-size: 16.5px;
+    font-size: 5vw;
     border: solid;
     border-color: #06172B;
     font-family: "Roboto Slab", serif;
@@ -1402,7 +1401,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
   #frontInf .secondBanner .secondBanner__elements .secondBanner__elements__title h2 {
     color: #06172B;
-    font-size: 55%;
+    font-size: 1.7vw;
   }
   #frontInf .information {
     display: none;
@@ -1421,7 +1420,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
 }
 /*MEDIA PARA ABOUT VERSIÓN MOBILE*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   #about {
     grid-template-areas: ". banner ." ". principalAbout .";
     grid-template-rows: repeat(2, auto);
@@ -1455,7 +1454,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
 }
 /*MEDIA PARA LA SECCIÓN LOCALES*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   #containerLocales {
     grid-template-areas: ". banner ." ". locales .";
     grid-template-rows: 102.65px auto;
@@ -1491,7 +1490,7 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
 }
 /*MEDIA PARA SECCIÓN SHOP*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   #conteinerShop {
     grid-template-areas: ". bannerShop ." ". tituloShop ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". cardsContainer ." ". saleElements__button .";
     grid-template-rows: repeat(11, auto);
@@ -1534,11 +1533,11 @@ footer #allFooter .bottom .bottom__copyright__text p {
   }
 }
 /*MEDIA PARA SECCIÓN NOVEDADES*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   #newsContainer {
     grid-template-areas: ". banner ." ". contenidoPrincipal ." ". advertisingBanner ." ". widget1 ." ". widget2 .";
     grid-template-rows: auto auto auto auto auto;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto 80% auto;
     gap: 5px;
   }
   #newsContainer .banner {
@@ -1549,6 +1548,8 @@ footer #allFooter .bottom .bottom__copyright__text p {
   #newsContainer .contenidoPrincipal {
     grid-area: contenidoPrincipal;
     border: solid 2px #06172B;
+    display: grid;
+    justify-items: center;
   }
   #newsContainer .contenidoPrincipal .contenidoPrincipal__titulo {
     font-size: 25px;
@@ -1556,28 +1557,48 @@ footer #allFooter .bottom .bottom__copyright__text p {
   #newsContainer .contenidoPrincipal .contenidoPrincipal__text {
     font-size: 17px;
     margin-top: 5px;
+    max-width: 80%;
+    max-height: 90%;
   }
   #newsContainer .advertisingBanner {
     grid-area: advertisingBanner;
     max-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #newsContainer .advertisingBanner img {
+    max-width: 75%;
     border: solid 2px #06172B;
   }
   #newsContainer .widget1 {
     grid-area: widget1;
     min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #newsContainer .widget1 img {
+    max-width: 75%;
     border: solid 2px #06172B;
   }
   #newsContainer .widget2 {
     grid-area: widget2;
     min-height: 250px;
     min-width: 282px;
-    border: solid 2px #06172B;
     margin-top: 5px;
     margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #newsContainer .widget2 img {
+    max-width: 75%;
+    border: solid 2px #06172B;
   }
 }
 /*MEDIA PARA SECCIÓN CONTACT*/
-@media (max-width: 768px) and (min-width: 400px) {
+@media (max-width: 1392px) and (min-width: 300px) {
   #containerContact {
     grid-template-areas: ". bannerContact ." ". contact__text ." ". contact__form .";
     grid-template-rows: repeat(3, auto);
