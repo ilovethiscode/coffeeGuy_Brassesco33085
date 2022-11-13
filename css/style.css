@@ -976,6 +976,7 @@ footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__in
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 footer #allFooter .mid .mid__blocks .mid__blocks__institucional .mid__blocks__institucional__blockUnit .mid__blocks__institucional__blockUnit__nav__ul .mid__blocks__institucional__blockUnit__nav__ul__element a .mid__blocks__institucional__blockUnit__nav__ul__element--text span:hover {
   color: #F7FFF7;
@@ -1013,6 +1014,7 @@ footer #allFooter .mid .mid__blocks .mid__blocks__legal .mid__blocks__legal__blo
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 footer #allFooter .mid .mid__blocks .mid__blocks__legal .mid__blocks__legal__blockUnit .mid__blocks__legal__blockUnit__nav__ul .mid__blocks__legal__blockUnit__nav__ul__element a .mid__blocks__legal__blockUnit__nav__ul__element--text span:hover {
   color: #F7FFF7;
@@ -1050,6 +1052,7 @@ footer #allFooter .mid .mid__blocks .mid__blocks__cliente .mid__blocks__cliente_
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 footer #allFooter .mid .mid__blocks .mid__blocks__cliente .mid__blocks__cliente__blockUnit .mid__blocks__cliente__blockUnit__nav__ul .mid__blocks__cliente__blockUnit__nav__ul__element a .mid__blocks__cliente__blockUnit__nav__ul__element--text span:hover {
   color: #F7FFF7;
@@ -1090,6 +1093,7 @@ footer #allFooter .mid .mid__blocks .mid__blocks__servicios .mid__blocks__servic
   display: flex;
   flex-direction: row;
   justify-content: center;
+  text-align: center;
 }
 footer #allFooter .mid .mid__blocks .mid__blocks__servicios .mid__blocks__servicios__blockUnit .mid__blocks__servicios__blockUnit__nav__ul .mid__blocks__servicios__blockUnit__nav__ul__element a .mid__blocks__servicios__blockUnit__nav__ul__element--text span:hover {
   color: #F7FFF7;
